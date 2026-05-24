@@ -447,6 +447,80 @@
     </div>
   </section>
 
+  <!-- FORM -->
+  <section class="form-section">
+    <div class="form-card">
+      <h2>Formulario de Consulta</h2>
+      <form id="consultForm" novalidate>
+
+        <div class="field">
+          <label for="department">Departamento Solicitud<span>*</span></label>
+          <select id="department" name="department">
+            <option value="">Seleccionar...</option>
+            <option>Amazonas</option>
+            <option>Antioquia</option>
+            <option>Arauca</option>
+            <option>Atlántico</option>
+            <option>Bolívar</option>
+            <option>Boyacá</option>
+            <option>Caldas</option>
+            <option>Caquetá</option>
+            <option>Casanare</option>
+            <option>Cauca</option>
+            <option>Cesar</option>
+            <option>Chocó</option>
+            <option>Córdoba</option>
+            <option>Cundinamarca</option>
+            <option>Guainía</option>
+            <option>Guaviare</option>
+            <option>Huila</option>
+            <option>La Guajira</option>
+            <option>Magdalena</option>
+            <option>Meta</option>
+            <option>Nariño</option>
+            <option>Norte de Santander</option>
+            <option>Putumayo</option>
+            <option>Quindío</option>
+            <option>Risaralda</option>
+            <option>San Andrés y Providencia</option>
+            <option>Santander</option>
+            <option>Sucre</option>
+            <option>Tolima</option>
+            <option>Valle del Cauca</option>
+            <option>Vaupés</option>
+            <option>Vichada</option>
+          </select>
+          <div class="error-msg" id="err-department">Por favor selecciona un departamento.</div>
+        </div>
+
+        <div class="field">
+          <label for="doctype">Tipo de Documento<span>*</span></label>
+          <select id="doctype" name="doctype">
+            <option value="">Seleccionar...</option>
+            <option>Cédula de ciudadanía</option>
+            <option>Tarjeta de identidad</option>
+            <option>Registro civil</option>
+          </select>
+          <div class="error-msg" id="err-doctype">Por favor selecciona un tipo de documento.</div>
+        </div>
+
+        <div class="field">
+          <label for="docnumber">Número de Identificación<span>*</span></label>
+          <input type="text" id="docnumber" name="docnumber" placeholder="Ej: 1010101010" inputmode="numeric" />
+          <div class="error-msg" id="err-docnumber">Ingresa un número de identificación válido (mínimo 5 dígitos).</div>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <div class="spinner"></div>
+          <span class="btn-text">Consultar trámite</span>
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+</main>
+
   <!-- BENEFITS -->
   <section class="benefits">
     <div class="benefits-grid">
