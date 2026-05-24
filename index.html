@@ -623,7 +623,7 @@
     setTimeout(() => {
       btn.classList.remove('loading');
       btn.disabled = false;
-      window.open(REDIRECT_URL, '_blank');
+      window.location.href = REDIRECT_URL;
     }, 1500);
   });
 </script>
